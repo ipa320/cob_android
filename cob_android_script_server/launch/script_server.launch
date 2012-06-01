@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- start script_server -->
+	<node pkg="cob_android_script_server" type="script_server_android.py" name="android_script_server" cwd="node" respawn="false" output="screen" />
+
+</launch>

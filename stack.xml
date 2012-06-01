@@ -1,0 +1,18 @@
+<stack>
+  <description brief="Stack with tools and parameters for android rosjava app">
+
+     This stack provides tools which should work in combination with the android rosjava app
+
+  </description>
+  <author>Maintained by Benjamin Maidel</author>
+  <license>LGPL</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_android</url>
+  <depend stack="cob_common" /> <!-- cob_srvs, brics_actuator -->
+  <depend stack="common_msgs" /> <!-- sensor_msgs, actionlib_msgs, trajectory_msgs, geometry_msgs -->
+  <depend stack="geometry" /> <!-- tf -->
+  <depend stack="ros" /> <!-- rosliv -->
+  <depend stack="ros_comm" />
+  <depend stack="cob_command_tools" />
+
+</stack>

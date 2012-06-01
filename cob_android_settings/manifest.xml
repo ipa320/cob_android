@@ -1,0 +1,14 @@
+<package>
+  <description brief="cob_android_settings">
+
+     cob_android_settings
+
+  </description>
+  <author>bnm</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/cob_android_settings</url>
+
+</package>
+
+

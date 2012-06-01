@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- send ROBOT parameters to parameter server -->
+	<rosparam command="load" ns="/android/settings/topic_names" file="$(find cob_android_settings)/config/topic_names.yaml"/>	
+</launch>
