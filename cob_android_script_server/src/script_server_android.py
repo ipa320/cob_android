@@ -32,6 +32,8 @@ class script_server():
 				handle01 = sss.recover(req.component_name)				
 		elif req.function_name == "move":
 			handle01 = sss.move(req.component_name,req.parameter_name,mode=req.mode)
+		elif req.function_name == "light":
+			handle01 = sss.set_light(req.parameter_name)
 		else:
 				rospy.logerr("function <<%s>> not supported", req.function_name)
 				res.error_code = -1
