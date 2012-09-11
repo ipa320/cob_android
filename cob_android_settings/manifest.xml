@@ -4,8 +4,8 @@
      cob_android_settings
 
   </description>
-  <author>bnm</author>
-  <license>BSD</license>
+  <author>Benjamin Maidel</author>
+  <license>LGPL</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/cob_android_settings</url>
 
