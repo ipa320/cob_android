@@ -2,5 +2,8 @@
 <launch>
 
 	<!-- send ROBOT parameters to parameter server -->
-	<rosparam command="load" ns="/android/settings/topic_names" file="$(find cob_android_settings)/config/topic_names.yaml"/>	
+	<rosparam command="load" ns="/android/settings/topic_names" file="$(find cob_android_settings)/config/topic_names.yaml"/>
+	<rosparam command="load" ns="/android/settings/service_names" file="$(find cob_android_settings)/config/service_names.yaml"/>
+	<rosparam command="load" ns="/command_gui/control_buttons" file="$(find raw_exhibition)/ros/config/$(env ROBOT)/command_gui_buttons.yaml"/>	
+	<rosparam command="load" ns="/command_gui/nav_buttons" file="$(find raw_exhibition)/ros/config/$(env ROBOT_ENV)/nav_buttons.yaml"/>	
 </launch>
