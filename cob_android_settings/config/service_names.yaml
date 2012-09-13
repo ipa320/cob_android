@@ -4,4 +4,4 @@ base_recover: /base_controller/recover
 torso_init: /torso_controller/init
 
 trigger_task: /trigger_new_task
-trigger_order: /trigger_new_order
+trigger_order: /order_ids
