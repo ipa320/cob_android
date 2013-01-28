@@ -11,7 +11,7 @@ import roslib
 roslib.load_manifest('cob_android_resource_server')
 import rospy
 
-default_img_path = ''
+default_img_path = '../'
 
 class MyHandler(BaseHTTPRequestHandler):            
     def do_GET(self):
@@ -33,6 +33,7 @@ class MyHandler(BaseHTTPRequestHandler):
                 self.send_header('Content-type','image/png')
                 self.end_headers()
                 fn = path.abspath(default_img_path+spath)
+                print 'fn: ', fn
                 with open(fn, 'rb') as f:
                     self.wfile.write(f.read())
                 return
