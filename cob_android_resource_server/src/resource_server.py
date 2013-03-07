@@ -19,7 +19,7 @@ class MyHandler(BaseHTTPRequestHandler):
         print "\nIncoming request!"
         try:
             spath = self.path[1:]
-            if spath.endswith('.jpg'):
+            if spath.endswith('.jpg') or spath.endswith('.jpeg'):
                 self.send_response(200)
                 self.send_header('Content-type','image/ipg')
                 self.end_headers()
