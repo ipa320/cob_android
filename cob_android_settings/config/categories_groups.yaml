@@ -1,8 +1,8 @@
 
 group1:
- group_name: essen
+ group_name: food
  group_image: "food128.png"
- component_name: Essen
+ component_name: Food
  items:
   item1:
    item_name: pringles
@@ -15,7 +15,7 @@ group1:
   item3:
    item_name: cake
    item_id: 102
-   image_path: " "
+   image_path: "cake.png"
 
 group2:
  group_name: drinks

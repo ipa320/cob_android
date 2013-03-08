@@ -11,7 +11,7 @@ import roslib
 roslib.load_manifest('cob_android_resource_server')
 import rospy
 
-default_img_path = '../'
+default_img_path = '../res/pictures/'
 
 class MyHandler(BaseHTTPRequestHandler):            
     def do_GET(self):
@@ -21,7 +21,7 @@ class MyHandler(BaseHTTPRequestHandler):
             spath = self.path[1:]
             if spath.endswith('.jpg') or spath.endswith('.jpeg'):
                 self.send_response(200)
-                self.send_header('Content-type','image/ipg')
+                self.send_header('Content-type','image/jpg')
                 self.end_headers()
                 fn = path.abspath(default_img_path+spath)
                 with open(fn, 'rb') as f:
