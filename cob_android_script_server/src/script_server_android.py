@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 import time
+import inspect
 
 import roslib
 roslib.load_manifest('cob_android_script_server')
 import rospy
-import actionlib
 
 from cob_android_script_server.srv import *
 from simple_script_server import *
@@ -27,24 +27,42 @@ class script_server():
 			if req.parameter_name == "init":
 				handle01 = sss.init(req.component_name)
 			elif req.parameter_name == "stop":
-				handle01 = sss.stop(req.component_name)
+				handle01 = sss.stop(req.component_name, mode=req.mode)
 			elif req.function_name == "recover":
-				handle01 = sss.recover(req.component_name)				
+				handle01 = sss.recover(req.component_name)
+			elif req.function_name == "halt":
+				handle01 = sss.halt(req.component_name)
+			elif req.function_name == "compose_trajectory":
+				handle01 = sss.compose_trajectory(req.component_name, req.parameter_name)
+			else:
+				handle01 = sss.trigger(req.component_name, rep.service_name, True, req.planning)
 		elif req.function_name == "move":
 			handle01 = sss.move(req.component_name,req.parameter_name,mode=req.mode)
+		elif req.function_name == "move_base_rel":
+			handle01 = sss.move_base_rel(req.component_name,req.parameter_name,mode=req.mode)
 		elif req.function_name == "light":
-			handle01 = sss.set_light(req.parameter_name)
+			handle01 = sss.set_light(req.component_name, req.parameter_name)
+		elif req.function_name == "stop":
+			handle01 = sss.stop(req.component_name)
+		elif req.function_name == "init":
+			handle01 = sss.init(req.component_name)
+		elif req.function_name == "recover":
+			handle01 = sss.recover(req.component_name)
+		elif req.function_name == "halt":
+			handle01 = sss.halt(req.component_name)
+		elif req.function_name == "compose_trajectory":
+			handle01 = sss.compose_trajectory(req.component_name, req.parameter_name)
 		else:
 				rospy.logerr("function <<%s>> not supported", req.function_name)
 				res.error_code = -1
 				return res
 
-                res.error_code = handle01.get_error_code()
-                if res.error_code == 0:
-                        rospy.logdebug("service result success")
-                else:
-                        rospy.logerr("service result error")
-		return res
+		res.error_code = handle01.get_error_code()
+		if res.error_code == 0:
+			rospy.logdebug("service result success")
+		else:
+			rospy.logerr("service result error")
+		return res			
 
 ## Main routine for running the script server
 #
