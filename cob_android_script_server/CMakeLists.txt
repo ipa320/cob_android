@@ -53,19 +53,11 @@ catkin_package(
 #  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 #)
 
-install(DIRECTORY common
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
 install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
-install(DIRECTORY scripts
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-install(DIRECTORY msg
+install(DIRECTORY srv
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
@@ -81,9 +73,9 @@ install(DIRECTORY msg
 #  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}/test
 #)
 
-#install(PROGRAMS src/simple_script_server.py
-#         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-#)
+install(PROGRAMS src/cob_android_script_server/script_server_android.py
+         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables and/or libraries for installation
 #install(TARGETS cob_script_server
