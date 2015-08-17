@@ -66,7 +66,7 @@ class script_server():
 
 ## Main routine for running the script server
 #
-if __name__ == '__main__':
+def script_server_android_main():
 	rospy.init_node('script_server')
 	script_server()
 	rospy.loginfo("script_server is running")
