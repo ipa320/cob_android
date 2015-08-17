@@ -13,5 +13,6 @@
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>cob_android_msgs</exec_depend>
+  <exec_depend>cob_script_server</exec_depend>
 
 </package>
