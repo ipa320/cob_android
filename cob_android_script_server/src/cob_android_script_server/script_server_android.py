@@ -6,7 +6,7 @@ import roslib
 roslib.load_manifest('cob_android_script_server')
 import rospy
 
-from cob_android_script_server.srv import *
+from cob_android_msgs.srv import *
 from simple_script_server import *
 
 sss = simple_script_server()
