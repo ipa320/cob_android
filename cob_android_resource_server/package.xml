@@ -6,7 +6,6 @@
   <license>LGPL</license>
 
   <url type="website">http://ros.org/wiki/cob_android_resource_server</url>
-  <!-- <url type="bugtracker"></url> -->
 
   <maintainer email="bnm@ipa.fhg.de">Benjamin Maidel</maintainer>
   <author email="bnm@ipa.fhg.de">Benjamin Maidel</author>
