@@ -11,7 +11,7 @@ add_service_files(
 )
 
 generate_messages(
-  DEPENDENCIES geometry_msgs std_msgs
+  DEPENDENCIES std_msgs
 )
 
 catkin_package(
