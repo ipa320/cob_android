@@ -7,8 +7,6 @@ import sys
 import threading
 import time
 
-import roslib
-roslib.load_manifest('cob_android_resource_server')
 import rospy
 
 default_img_path = '../res/pictures/'

@@ -2,8 +2,6 @@
 import time
 import inspect
 
-import roslib
-roslib.load_manifest('cob_android_script_server')
 import rospy
 
 from cob_android_msgs.srv import *

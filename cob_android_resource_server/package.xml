@@ -1,4 +1,4 @@
-<package>
+<package format="2">
   <name>cob_android_resource_server</name>
   <version>0.1.0</version>
   <description>cob_android_resource_server</description>
@@ -11,5 +11,5 @@
   <author email="bnm@ipa.fhg.de">Benjamin Maidel</author>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>rospy</run_depend>
+  <exec_depend>rospy</exec_depend>
 </package>
