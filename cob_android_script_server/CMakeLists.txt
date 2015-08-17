@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(cob_android_script_server)
 
-find_package(catkin REQUIRED COMPONENTS rospy message_generation std_msgs)
+find_package(catkin REQUIRED COMPONENTS rospy message_generation)
 
 catkin_python_setup()
 
@@ -11,11 +11,11 @@ add_service_files(
 )
 
 generate_messages(
-  DEPENDENCIES std_msgs
+  DEPENDENCIES
 )
 
 catkin_package(
-    CATKIN_DEPENDS message_runtime std_msgs
+    CATKIN_DEPENDS message_runtime
 )
 
 install(DIRECTORY launch
