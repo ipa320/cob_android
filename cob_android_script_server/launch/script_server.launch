@@ -7,7 +7,7 @@
         <arg name="pkg_env_config" default="$(find cob_default_env_config)"/>
 
 	<!-- start script_server -->
-	<node pkg="cob_android_script_server" type="script_server_android.py" name="android_script_server" cwd="node" respawn="false" output="screen" >
+	<node pkg="cob_android_script_server" type="script_server_android" name="android_script_server" cwd="node" respawn="false" output="screen" >
 		<rosparam command="load" ns="control_buttons" file="$(arg pkg_robot_config)/$(arg robot)/command_gui_buttons.yaml"/>
 		<rosparam command="load" ns="nav_buttons" file="$(arg pkg_env_config)/$(arg robot_env)/command_gui_buttons.yaml"/>
 	</node>
