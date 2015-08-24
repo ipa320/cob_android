@@ -2,11 +2,9 @@
 import time
 import inspect
 
-import roslib
-roslib.load_manifest('cob_android_script_server')
 import rospy
 
-from cob_android_script_server.srv import *
+from cob_android_msgs.srv import *
 from simple_script_server import *
 
 sss = simple_script_server()
@@ -66,7 +64,7 @@ class script_server():
 
 ## Main routine for running the script server
 #
-if __name__ == '__main__':
+def script_server_android_main():
 	rospy.init_node('script_server')
 	script_server()
 	rospy.loginfo("script_server is running")

@@ -7,8 +7,6 @@ import sys
 import threading
 import time
 
-import roslib
-roslib.load_manifest('cob_android_resource_server')
 import rospy
 
 default_img_path = '../res/pictures/'
@@ -62,7 +60,7 @@ class ResourceServer(threading.Thread):
         self.server.shutdown()
         self.server.socket.close()
 
-if __name__ == '__main__':
+def resource_server_main():
     rospy.init_node('android_resource_server')
     resServer = ResourceServer()
     resServer.start()

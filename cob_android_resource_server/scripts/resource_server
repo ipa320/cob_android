@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+import cob_android_resource_server.resource_server
+cob_android_resource_server.resource_server.resource_server_main()

@@ -1,4 +1,4 @@
-<package>
+<package format="2">
   <name>cob_android_settings</name>
   <version>0.1.0</version>
   <description>cob_android_settings</description>
@@ -6,7 +6,6 @@
   <license>LGPL</license>
 
   <url type="website">http://ros.org/wiki/cob_android_settings</url>
-  <!-- <url type="bugtracker"></url> -->
 
   <maintainer email="bnm@ipa.fhg.de">Benjamin Maidel</maintainer>
   <author email="bnm@ipa.fhg.de">Benjamin Maidel</author>
