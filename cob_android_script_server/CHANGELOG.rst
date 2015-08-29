@@ -2,8 +2,8 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2015-08-29)
+------------------
 * Merge branch 'indigo_dev' of github.com:ipa320/cob_android into feature/non_blocking_service_calls
 * added missing dependency
 * added missing dependency

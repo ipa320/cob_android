@@ -2,8 +2,8 @@
 Changelog for package cob_android_resource_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.1 (2015-08-29)
+------------------
 * migrated to package xml 2
 * considered pr commends
 * fixed build errors
