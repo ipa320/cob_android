@@ -1,11 +1,11 @@
 cam_image_compressed: /stereo/left/image_color/compressed
-cam_image_rgb: /cam3d/rgb/image_color
+cam_image_rgb: /cam3d/rgb/image_raw/compressed
 cam_image_depth: /cam3d/depth/image
 
 base: /base_link
 
 base_controller_state: /base_controller/state
-base_controller_command: /base_controller/command_safe
+base_controller_command: /base_controller/command
 base_controller_current_goal: move_base/current_goal
 base_controller_goal: move_base_simple/goal
 
