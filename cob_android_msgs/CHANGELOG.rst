@@ -2,6 +2,11 @@
 Changelog for package cob_android_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added order action and service (needed for old order_app)
+* Contributors: Benjamin Maidel
+
 0.1.1 (2015-08-29)
 ------------------
 * migrated to package xml 2
