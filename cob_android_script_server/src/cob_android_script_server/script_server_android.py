@@ -33,7 +33,7 @@ class script_server():
 			elif req.function_name == "compose_trajectory":
 				handle01 = sss.compose_trajectory(req.component_name, req.parameter_name)
 			else:
-				handle01 = sss.trigger(req.component_name, req.parameter_name, blocking=False, planning=req.planning)
+				handle01 = sss.trigger(req.component_name, req.parameter_name, blocking=False)
 		elif req.function_name == "move":
 			handle01 = sss.move(req.component_name,req.parameter_name, blocking=False, mode=req.mode)
 		elif req.function_name == "move_base_rel":
