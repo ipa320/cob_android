@@ -12,5 +12,5 @@ install(DIRECTORY launch
 )
 
 install(PROGRAMS scripts/script_server_android
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}/scripts
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
