@@ -2,6 +2,16 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* removed scripts and requires tag from setup.py
+* do not use sub folder for installed scripts
+* Create CMakeLists.txt
+* remove duplicate install_tag
+* refactor config structure
+* removed planning parameter for trigger service
+* Contributors: Benjamin Maidel, Florian Weisshardt, ipa-cob4-2, ipa-fxm
+
 0.1.2 (2016-04-01)
 ------------------
 

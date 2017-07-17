@@ -2,6 +2,9 @@
 Changelog for package cob_android_resource_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.2 (2016-04-01)
 ------------------
 

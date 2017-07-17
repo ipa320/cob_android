@@ -2,6 +2,11 @@
 Changelog for package cob_android_settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* refactor config structure
+* Contributors: ipa-fxm
+
 0.1.2 (2016-04-01)
 ------------------
 
