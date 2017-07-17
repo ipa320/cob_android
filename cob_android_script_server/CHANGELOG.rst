@@ -2,8 +2,8 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.3 (2017-07-17)
+------------------
 * removed scripts and requires tag from setup.py
 * do not use sub folder for installed scripts
 * Create CMakeLists.txt
