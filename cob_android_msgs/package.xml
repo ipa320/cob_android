@@ -3,7 +3,7 @@
   <version>0.1.2</version>
   <description>cob_android_msgs</description>
   
-  <license>LGPL</license>
+  <license>Apache 2.0</license>
 
   <url type="website">http://ros.org/wiki/cob_android_msgs</url>
 
