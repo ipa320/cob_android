@@ -1,9 +1,9 @@
 <package format="2">
   <name>cob_android_resource_server</name>
-  <version>0.1.3</version>
+  <version>0.1.4</version>
   <description>cob_android_resource_server</description>
   
-  <license>LGPL</license>
+  <license>Apache 2.0</license>
 
   <url type="website">http://ros.org/wiki/cob_android_resource_server</url>
 
