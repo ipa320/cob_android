@@ -2,6 +2,9 @@
 Changelog for package cob_android_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.3 (2017-07-17)
+------------------
+
 0.1.2 (2016-04-01)
 ------------------
 * added order action and service (needed for old order_app)
