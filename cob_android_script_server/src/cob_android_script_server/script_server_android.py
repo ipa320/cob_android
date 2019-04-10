@@ -42,11 +42,11 @@ class script_server():
 				handle01 = sss.init(req.component_name, blocking=False)
 			elif req.parameter_name == "stop":
 				handle01 = sss.stop(req.component_name, mode=req.mode, blocking=False)
-			elif req.function_name == "recover":
+			elif req.parameter_name == "recover":
 				handle01 = sss.recover(req.component_name, blocking=False)
-			elif req.function_name == "halt":
+			elif req.parameter_name == "halt":
 				handle01 = sss.halt(req.component_name, blocking=False)
-			elif req.function_name == "compose_trajectory":
+			elif req.parameter_name == "compose_trajectory":
 				handle01 = sss.compose_trajectory(req.component_name, req.parameter_name)
 			else:
 				handle01 = sss.trigger(req.component_name, req.parameter_name, blocking=False)
