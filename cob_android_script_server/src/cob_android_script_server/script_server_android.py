@@ -66,6 +66,8 @@ class script_server():
 			handle01 = sss.halt(req.component_name, blocking=False)
 		elif req.function_name == "compose_trajectory":
 			handle01 = sss.compose_trajectory(req.component_name, req.parameter_name)
+		elif req.function_name == "trigger_action":
+			handle01 = sss.trigger_action(req.component_name, req.parameter_name)
 		else:
 				rospy.logerr("function <<%s>> not supported", req.function_name)
 				res.error_code = -1
@@ -76,7 +78,7 @@ class script_server():
 			rospy.logdebug("service result success")
 		else:
 			rospy.logerr("service result error")
-		return res			
+		return res
 
 ## Main routine for running the script server
 #
