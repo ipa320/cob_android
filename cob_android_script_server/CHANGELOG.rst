@@ -2,6 +2,14 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.5 (2019-05-20)
+------------------
+* Merge pull request `#36 <https://github.com/ipa320/cob_android/issues/36>`_ from benmaidel/feature/trigger_action
+  Feature/trigger action
+* add support for trigger_action buttons
+* fix wrong parameter comparison
+* Contributors: Benjamin Maidel, Felix Messmer
+
 0.1.4 (2018-01-07)
 ------------------
 * Merge pull request `#33 <https://github.com/ipa320/cob_android/issues/33>`_ from ipa320/indigo_release_candidate

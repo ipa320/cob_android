@@ -2,6 +2,9 @@
 Changelog for package cob_android_settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.5 (2019-05-20)
+------------------
+
 0.1.4 (2018-01-07)
 ------------------
 * Merge pull request `#33 <https://github.com/ipa320/cob_android/issues/33>`_ from ipa320/indigo_release_candidate
