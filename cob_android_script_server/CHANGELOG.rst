@@ -2,6 +2,9 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.6 (2019-08-07)
+------------------
+
 0.1.5 (2019-05-20)
 ------------------
 * Merge pull request `#36 <https://github.com/ipa320/cob_android/issues/36>`_ from benmaidel/feature/trigger_action
