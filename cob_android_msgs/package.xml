@@ -11,8 +11,10 @@
   <author email="bnm@ipa.fhg.de">Benjamin Maidel</author>
 
   <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>message_generation</build_depend>
   <exec_depend>message_runtime</exec_depend>
+
   <depend>actionlib</depend>
   <depend>actionlib_msgs</depend>
 </package>

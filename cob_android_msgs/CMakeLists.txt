@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(cob_android_msgs)
 
-find_package(catkin REQUIRED COMPONENTS message_generation actionlib_msgs actionlib)
+find_package(catkin REQUIRED COMPONENTS actionlib actionlib_msgs message_generation)
 
 add_service_files(
   FILES
+  Order.srv
   ScreenControl.srv
   Script.srv
-  Order.srv
 )
 
 add_action_files(
@@ -17,4 +17,6 @@ add_action_files(
 
 generate_messages(DEPENDENCIES actionlib_msgs)
 
-catkin_package(CATKIN_DEPENDS message_runtime)
+catkin_package(
+  CATKIN_DEPENDS actionlib_msgs message_runtime
+)
