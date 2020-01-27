@@ -26,7 +26,7 @@ import rospy
 
 default_img_path = '../res/pictures/'
 
-class MyHandler(BaseHTTPRequestHandler):            
+class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         global default_img_path
         print("\nIncoming request!")
@@ -62,7 +62,7 @@ class ResourceServer(threading.Thread):
         self.ns_global_prefix="/android/resource_server"
         if rospy.has_param(self.ns_global_prefix + "/default_img_path"):
             global default_img_path
-            default_img_path = rospy.get_param(self.ns_global_prefix + "/default_img_path")
+            default_img_path = rospy.get_param(self.ns_global_prefix + "/default_img_path", '')
             if not default_img_path.endswith("/"):
                 default_img_path = default_img_path + "/"
 
