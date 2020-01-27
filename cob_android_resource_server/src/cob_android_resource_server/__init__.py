@@ -1,1 +1,1 @@
-from resource_server import *
+from .resource_server import *
