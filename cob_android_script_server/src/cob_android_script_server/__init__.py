@@ -1,1 +1,1 @@
-from script_server_android import *
+from .script_server_android import *

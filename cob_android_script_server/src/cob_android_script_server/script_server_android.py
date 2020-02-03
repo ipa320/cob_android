@@ -20,9 +20,8 @@ import inspect
 
 import rospy
 
-from cob_android_msgs.srv import *
-from simple_script_server import *
-
+from cob_android_msgs.srv import Script, ScriptResponse
+from simple_script_server import simple_script_server  ## pylint: disable=no-name-in-module
 sss = simple_script_server()
 
 ## Script server class which inherits from script class.
