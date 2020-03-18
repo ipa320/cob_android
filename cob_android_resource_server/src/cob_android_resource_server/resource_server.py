@@ -15,7 +15,7 @@
 # limitations under the License.
 
 
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from os import path
 import subprocess
 import sys
@@ -26,10 +26,10 @@ import rospy
 
 default_img_path = '../res/pictures/'
 
-class MyHandler(BaseHTTPRequestHandler):            
+class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         global default_img_path
-        print "\nIncoming request!"
+        print("\nIncoming request!")
         try:
             spath = self.path[1:]
             if spath.endswith('.jpg') or spath.endswith('.jpeg'):
@@ -46,7 +46,7 @@ class MyHandler(BaseHTTPRequestHandler):
                 self.send_header('Content-type','image/png')
                 self.end_headers()
                 fn = path.abspath(default_img_path+spath)
-                print 'fn: ', fn
+                print('fn: ', fn)
                 with open(fn, 'rb') as f:
                     self.wfile.write(f.read())
                 return
@@ -62,13 +62,13 @@ class ResourceServer(threading.Thread):
         self.ns_global_prefix="/android/resource_server"
         if rospy.has_param(self.ns_global_prefix + "/default_img_path"):
             global default_img_path
-            default_img_path = rospy.get_param(self.ns_global_prefix + "/default_img_path")
+            default_img_path = rospy.get_param(self.ns_global_prefix + "/default_img_path", '')
             if not default_img_path.endswith("/"):
                 default_img_path = default_img_path + "/"
 
     def run(self):
         self.server = HTTPServer(('', 44644), MyHandler)
-        print '\nStarted Android resource server on port 44644'
+        print('\nStarted Android resource server on port 44644')
         self.server.serve_forever()
 
     def close(self):
