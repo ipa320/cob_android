@@ -2,8 +2,8 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.7 (2020-03-18)
+------------------
 * Merge pull request `#39 <https://github.com/ipa320/cob_android/issues/39>`_ from fmessmer/feature/python3_compatibility
   [ci_updates] pylint + Python3 compatibility
 * fix pylint errors
