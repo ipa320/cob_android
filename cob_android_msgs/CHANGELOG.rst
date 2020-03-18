@@ -2,6 +2,13 @@
 Changelog for package cob_android_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#38 <https://github.com/ipa320/cob_android/issues/38>`_ from fmessmer/ci_updates
+  [travis] ci updates
+* catkin_lint fixes
+* Contributors: Felix Messmer, fmessmer
+
 0.1.6 (2019-08-07)
 ------------------
 

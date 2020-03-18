@@ -2,6 +2,9 @@
 Changelog for package cob_android_settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.6 (2019-08-07)
 ------------------
 
