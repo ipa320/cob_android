@@ -18,5 +18,5 @@ add_action_files(
 generate_messages(DEPENDENCIES actionlib_msgs)
 
 catkin_package(
-  CATKIN_DEPENDS actionlib_msgs message_runtime
+  CATKIN_DEPENDS actionlib actionlib_msgs message_runtime
 )
