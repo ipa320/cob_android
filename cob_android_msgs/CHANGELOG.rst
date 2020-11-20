@@ -2,6 +2,16 @@
 Changelog for package cob_android_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.8 (2020-11-20)
+------------------
+* Merge pull request `#40 <https://github.com/ipa320/cob_android/issues/40>`_ from fmessmer/test_noetic
+  test noetic
+* Bump CMake version to avoid CMP0048 warning
+* Merge pull request `#41 <https://github.com/ipa320/cob_android/issues/41>`_ from fmessmer/fix_catkin_lint
+  fix catkin_lint
+* fix catkin_lint
+* Contributors: Felix Messmer, fmessmer
+
 0.1.7 (2020-03-18)
 ------------------
 * Merge pull request `#38 <https://github.com/ipa320/cob_android/issues/38>`_ from fmessmer/ci_updates
