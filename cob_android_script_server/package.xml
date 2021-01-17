@@ -4,7 +4,7 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>cob_android_script_server</name>
-  <version>0.1.8</version>
+  <version>0.1.9</version>
   <description>cob_android_script_server</description>
   
   <license>Apache 2.0</license>
