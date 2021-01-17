@@ -2,6 +2,9 @@
 Changelog for package cob_android_resource_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.8 (2020-11-20)
 ------------------
 * Merge pull request `#40 <https://github.com/ipa320/cob_android/issues/40>`_ from fmessmer/test_noetic
