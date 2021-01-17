@@ -11,6 +11,6 @@ install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
-install(PROGRAMS scripts/script_server_android
+catkin_install_python(PROGRAMS scripts/script_server_android
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
