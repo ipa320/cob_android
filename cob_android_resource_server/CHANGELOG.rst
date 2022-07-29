@@ -2,6 +2,11 @@
 Changelog for package cob_android_resource_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.10 (2022-07-29)
+-------------------
+* pylint disable import-error
+* Contributors: Felix Messmer
+
 0.1.9 (2021-01-17)
 ------------------
 

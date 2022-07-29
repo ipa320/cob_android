@@ -15,7 +15,7 @@
 # limitations under the License.
 
 
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, HTTPServer  #pylint: disable=import-error
 from os import path
 import subprocess
 import sys

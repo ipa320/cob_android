@@ -2,6 +2,9 @@
 Changelog for package cob_android_script_server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.10 (2022-07-29)
+-------------------
+
 0.1.9 (2021-01-17)
 ------------------
 * Merge pull request `#42 <https://github.com/ipa320/cob_android/issues/42>`_ from fmessmer/fix_noetic
