@@ -2,6 +2,9 @@
 Changelog for package cob_android_settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.1.9 (2021-01-17)
 ------------------
 
